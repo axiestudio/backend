@@ -1,2 +1,2 @@
-# Install the axiestudio package directly
--e ./base
+# Install the axiestudio package from root
+-e .
