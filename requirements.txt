@@ -1,0 +1,10 @@
+# Railway deployment requirements
+# This file ensures Railway can install dependencies correctly
+
+# Install the local package
+-e ./base
+
+# Additional production dependencies for Railway
+gunicorn>=22.0.0,<24.0.0
+uvicorn[standard]>=0.30.0,<1.0.0
+psycopg2-binary>=2.9.0  # For PostgreSQL support on Railway
